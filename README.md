@@ -11,7 +11,7 @@ _{Allows users to type in a sentence and specify a word that they want to be cou
 ## Setup
 
 * 1. Install Word Counter by cloning this repository:
-
+        https://github.com/MitchRivet/WordCounter.git
 * 2. navigate to the project folder and run
     $ composer install
 

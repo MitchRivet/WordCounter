@@ -27,6 +27,17 @@
 
                 $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
 
+                $this->assertEquals(1, $result);
+            }
+
+            function test_countRepeats_oneLetter_inSentence()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "a dog ate the biscuit";
+                $word_to_count= "a";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
                 $this->assertEquals(1, $result); 
             }
     }

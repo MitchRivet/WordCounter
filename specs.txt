@@ -15,7 +15,7 @@ Output: 1
 Spec_3
 Behavior: counts the repeat of a single letter, in the context of a sentence
 why: may have to add a new method to break apart a sentece
-Input 1: "a dog ate a biscuit"
+Input 1: "a dog ate the biscuit"
 Input 2: "a"
 Output: 1
 

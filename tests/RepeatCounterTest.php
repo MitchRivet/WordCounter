@@ -38,7 +38,18 @@
 
                 $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
 
-                $this->assertEquals(1, $result); 
+                $this->assertEquals(1, $result);
+            }
+
+            function test_countRepeats_threeLetter_inSentence()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "a dog ate the biscuit";
+                $word_to_count = "ate";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
+                $this->assertEquals(1, $result);
             }
     }
 ?>

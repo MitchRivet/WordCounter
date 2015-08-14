@@ -20,7 +20,7 @@
     $app->get("/counter_results", function() use ($app) {
         $new_repeatcounter = new RepeatCounter;
         $repeats_counted = $new_repeatcounter->countRepeats($_GET['input_string'], $_GET['word_to_count']);
-        return $app['twig']->render('repeatcounter_results.html.twig', array('result' => $repeats_counted));
+        return $app['twig']->render('repeatcounter_result.html.twig', array('result' => $repeats_counted));
     });
 
     return $app;

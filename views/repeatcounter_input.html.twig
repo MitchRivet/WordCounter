@@ -2,12 +2,20 @@
 <html>
     <head>
 
-        <title>Counted word</title>
+        <title>Word Counter</title>
     </head>
     <body>
-        <h1>We counted this word:</h1>
-        <h2>{{ result }} times</h2>
+        <h1>Word Counter</h1>
+        <p>Type in a sentence below and the word you want counted</p>
+        <form action='/counter_results'>
 
-        <a href='/'>Count another word</a> 
+            <label for='input_string'>Sentence</label>
+            <input type='text' id='input_string' name='input_string'>
+
+            <label for='word_to_count'>Word to count</label>
+            <input type='text' id='word_to_count' name='word_to_count'>
+
+            <button type='submit'>Count the word!</button>
+        </form> 
     </body>
 </html>

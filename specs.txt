@@ -39,3 +39,10 @@ why: may have to sepearate words from commas, if the desired word to count is ne
 Input 1: "when she went to the bar, the bar was crowded"
 Input 2: "bar"
 Output: 2
+
+Spec_7
+Behavior: counts more than two repeats with space at the end
+why: just making sure the counters are working correctly
+Input 1: "it it it it it it it "
+Input 2: "it"
+Output: 7

@@ -71,7 +71,19 @@
 
                 $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
 
-                $this->assertEquals(2, $result); 
+                $this->assertEquals(2, $result);
+            }
+
+            function test_countRepeats_manyRepeats()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "it it it it it it it ";
+                $word_to_count = "it";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
+                $this->assertEquals(7, $result); 
             }
     }
+
 ?>

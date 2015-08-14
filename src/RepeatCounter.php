@@ -4,7 +4,7 @@
     {
         function countRepeats($input_string, $word_to_count)
         {
-            $grammar = array(",", ".", ":", ";", "!", "?", " "); 
+            $grammar = array(",", ".", ":", ";", "!", "?", " ", "'");
             $output_count = 0;
             $input_words = explode(" ", $input_string);
 
@@ -14,6 +14,7 @@
                 {
                     $output_count++;
                 }
+                //Although the PHP doc does not say this, array_intersect appears to return a boolean...
                 elseif (array_intersect(str_split($input_word), $grammar) && strpos($input_word, $word_to_count) !== false)
                 {
                     $output_count++;

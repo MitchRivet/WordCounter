@@ -46,3 +46,10 @@ why: just making sure the counters are working correctly
 Input 1: "it it it it it it it "
 Input 2: "it"
 Output: 7
+
+Spec_8
+Behavior: counts words regardless of upper/lower case
+why: may have to add a piece where all words are made lower case
+Input 1: "it it it it it it it "
+Input 2: "It"
+Output: 7

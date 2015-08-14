@@ -82,7 +82,18 @@
 
                 $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
 
-                $this->assertEquals(7, $result); 
+                $this->assertEquals(7, $result);
+            }
+
+            function test_countRepeats_caseSensitivity()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "it it it it it it it ";
+                $word_to_count = "It";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
+                $this->assertEquals(7, $result);
             }
     }
 

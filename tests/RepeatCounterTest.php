@@ -60,6 +60,17 @@
 
                 $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
 
+                $this->assertEquals(2, $result);
+            }
+
+            function test_countRepeats_handlingGrammar()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "when she went to the bar, the bar was crowded";
+                $word_to_count = "bar";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
                 $this->assertEquals(2, $result); 
             }
     }

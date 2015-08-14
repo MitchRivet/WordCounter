@@ -32,3 +32,10 @@ why: may have to add new math to count words multiple times
 Input 1: "when she went to the bar, she had a great time"
 Input 2: "she"
 Output: 2
+
+Spec_6
+Behavior: counts words next to punctuation
+why: may have to sepearate words from commas, if the desired word to count is next to a comma
+Input 1: "when she went to the bar, the bar was crowded"
+Input 2: "bar"
+Output: 2

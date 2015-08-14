@@ -51,5 +51,16 @@
 
                 $this->assertEquals(1, $result);
             }
+
+            function test_countRepeats_threeLetter_multipleRepeats()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "when she went to the bar, she had a great time";
+                $word_to_count = "she";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
+                $this->assertEquals(2, $result); 
+            }
     }
 ?>

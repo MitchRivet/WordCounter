@@ -18,5 +18,16 @@
                 //Assert
                 $this->assertEquals(1, $result);
             }
+
+            function test_countRepeats_twoLetter()
+            {
+                $test_RepeatCounter = new RepeatCounter;
+                $input_string = "it";
+                $word_to_count = "it";
+
+                $result = $test_RepeatCounter->countRepeats($input_string, $word_to_count);
+
+                $this->assertEquals(1, $result); 
+            }
     }
 ?>

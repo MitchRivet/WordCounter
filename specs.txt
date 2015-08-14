@@ -1,0 +1,34 @@
+Spec_1
+Behavior: counts the repeats of a single letter, not in a full sentence context
+Why: single character input will be easiest to handle
+Input 1: "a"
+Input 2: "a"
+Output:  1
+
+Spec_2
+Behavior: counts the repeat of a two letter word, not in the context of a sentence
+Why: adding a second character will be slightly harder than one character, should scale up to words of any character length
+Input 1: "it"
+Input 2: "it"
+Output: 1
+
+Spec_3
+Behavior: counts the repeat of a single letter, in the context of a sentence
+why: may have to add a new method to break apart a sentece
+Input 1: "a dog ate a biscuit"
+Input 2: "a"
+Output: 1
+
+Spec_4
+Behavior: counts the repeat of a three letter word in the context of a sentence
+why: should follow from 3, but want to make sure nothing breaks when adding complexity
+Input 1: "a dog ate a biscuit"
+Input 2: "ate"
+Output: 1
+
+Spec_5
+Behavior: counts the repeat of a word multiple times
+why: may have to add new math to count words multiple times
+Input 1: "when she went to the bar, she had a great time"
+Input 2: "she"
+Output: 2
